@@ -28,7 +28,7 @@ namespace Meetings.WebMvcApp.Controllers
         }
 
         // GET: UsersController/Details/5
-        public async Task<ActionResult<UserView>> Details(int id)//TODO id is 0 , why??
+        public async Task<ActionResult<UserView>> Details(int id)
         {
             var model = await _userService.GetById(id);
 
